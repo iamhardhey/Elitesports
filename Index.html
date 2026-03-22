@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Elite Sports Academy</title>
+    <title>Elite Sports Academy - Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,11 +23,11 @@
                     <span></span>
                 </button>
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="programs.html">Programs</a></li>
                     <li><a href="coaches.html">Coaches</a></li>
-                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="register.html" class="btn-register">Register</a></li>
@@ -36,82 +36,86 @@
         </div>
     </nav>
 
-    <!-- Page Hero -->
-    <section class="page-hero" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663455679374/hcwPb6U6B8K7XCEomAyQ54/facilities-jP7nMYWzdL2Vjxoc5GPdRa.webp')">
+    <!-- Hero Section with Carousel -->
+    <section class="hero">
+        <div class="carousel-container">
+            <div class="carousel-slide active" style="background-image: url(hero1.jpeg)"></div>
+            <div class="carousel-slide" style="background-image: url(hero2.jpeg)"></div>
+            <div class="carousel-slide" style="background-image: url(hero3.jpeg)"></div>
+        </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Gallery</h1>
-            <p>Moments from Our Academy</p>
+            <h2>Welcome to Elite Sports Academy</h2>
+            <p>Develop Your Skills, Achieve Your Dreams</p>
+            <a href="register.html" class="cta-button">Start Your Journey</a>
+        </div>
+        <div class="carousel-indicators">
+            <span class="indicator active" onclick="currentSlide(0)"></span>
+            <span class="indicator" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery-section">
+    <!-- Quick Stats Section -->
+    <section class="stats-section">
         <div class="container">
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663455679374/hcwPb6U6B8K7XCEomAyQ54/hero-banner-H997U8aUmZCAYLW6wJykYs.webp" alt="Training Session">
-                    <div class="gallery-overlay">
-                        <p>Training Session</p>
-                    </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>500+</h3>
+                    <p>Active Athletes</p>
                 </div>
-
-                <div class="gallery-item">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663455679374/hcwPb6U6B8K7XCEomAyQ54/training-programs-oNmx65GRkfch5XnoFLUnAs.webp" alt="Professional Coaching">
-                    <div class="gallery-overlay">
-                        <p>Professional Coaching</p>
-                    </div>
+                <div class="stat-card">
+                    <h3>50+</h3>
+                    <p>Expert Coaches</p>
                 </div>
-
-                <div class="gallery-item">
-                    <img src="medal.jpeg" alt="Professional Coaching">
-                    <div class="gallery-overlay">
-                        <p>Medals</p>
-                    </div>
+                <div class="stat-card">
+                    <h3>15+</h3>
+                    <p>Sports Programs</p>
                 </div>
-
-                <div class="gallery-item">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663455679374/hcwPb6U6B8K7XCEomAyQ54/facilities-jP7nMYWzdL2Vjxoc5GPdRa.webp" alt="State-of-the-Art Facilities">
-                    <div class="gallery-overlay">
-                        <p>State-of-the-Art Facilities</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item">
-                    <img src="hero3.jpeg" alt="Team Events">
-                    <div class="gallery-overlay">
-                        <p>Team Events</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663455679374/hcwPb6U6B8K7XCEomAyQ54/hero-banner-H997U8aUmZCAYLW6wJykYs.webp" alt="Competition">
-                    <div class="gallery-overlay">
-                        <p>Competition</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663455679374/hcwPb6U6B8K7XCEomAyQ54/training-programs-oNmx65GRkfch5XnoFLUnAs.webp" alt="Skill Development">
-                    <div class="gallery-overlay">
-                        <p>Skill Development</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663455679374/hcwPb6U6B8K7XCEomAyQ54/facilities-jP7nMYWzdL2Vjxoc5GPdRa.webp" alt="Awards Ceremony">
-                    <div class="gallery-overlay">
-                        <p>Awards Ceremony</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item">
-                    <img src="hero2.jpeg" alt="Academy Life">
-                    <div class="gallery-overlay">
-                        <p>Academy Life</p>
-                    </div>
+                <div class="stat-card">
+                    <h3>100+</h3>
+                    <p>Annual Events</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Featured Programs Section -->
+    <section class="featured-programs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Programs</h2>
+                <p>Comprehensive Training for All Levels</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-icon">⚽</div>
+                    <h3>Football Academy</h3>
+                    <p>Professional football training with focus on technique and tactics.</p>
+                    <a href="programs.html" class="learn-more">Learn More →</a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">🏀</div>
+                    <h3>Basketball Program</h3>
+                    <p>Intensive basketball training covering fundamentals and competition.</p>
+                    <a href="programs.html" class="learn-more">Learn More →</a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">🎾</div>
+                    <h3>Tennis Academy</h3>
+                    <p>Elite tennis coaching with personalized training plans.</p>
+                    <a href="programs.html" class="learn-more">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Join Our Academy?</h2>
+            <p>Take the first step towards becoming a champion athlete</p>
+            <a href="register.html" class="cta-button-large">Register Now</a>
         </div>
     </section>
 
@@ -136,7 +140,7 @@
                     <h4>Contact Info</h4>
                     <p>📞 08123729316</p>
                     <p>📧 omocovenant01@gmail.com</p>
-                    <p>📍 LAUTECH, OYO STATE</p>
+                    <p>📍 LAUTECH, OYO STATE.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Follow Us</h4>
