@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Elite Sports Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <h1>Elite Sports Academy</h1>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="coaches.html">Coaches</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="register.html" class="active btn-register">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663455679374/hcwPb6U6B8K7XCEomAyQ54/training-programs-oNmx65GRkfch5XnoFLUnAs.webp')">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Player Registration</h1>
+            <p>Join Elite Sports Academy Today</p>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="registration-section">
+        <div class="container">
+            <div class="registration-wrapper">
+                <h2>Complete Your Registration</h2>
+                <p class="registration-intro">Fill in the form below to join our academy. All fields marked with * are required.</p>
+
+                <form class="registration-form" id="registrationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="age">Age *</label>
+                            <input type="number" id="age" name="age" min="5" max="30" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender *</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="sport">Select Sport *</label>
+                            <select id="sport" name="sport" required>
+                                <option value="">Choose a Sport</option>
+                                <option value="football">Football</option>
+                                <option value="basketball">Basketball</option>
+                                <option value="tennis">Tennis</option>
+                                <option value="cricket">Cricket</option>
+                                <option value="fitness">Fitness & Conditioning</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="level">Experience Level *</label>
+                            <select id="level" name="level" required>
+                                <option value="">Select Level</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="parentName">Parent/Guardian Name (if under 18) *</label>
+                        <input type="text" id="parentName" name="parentName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="parentPhone">Parent/Guardian Phone *</label>
+                        <input type="tel" id="parentPhone" name="parentPhone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="medicalInfo">Medical Information / Allergies</label>
+                        <textarea id="medicalInfo" name="medicalInfo" rows="3" placeholder="Any medical conditions or allergies we should know about?"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <label>
+                            <input type="checkbox" name="terms" required>
+                            I agree to the terms and conditions
+                        </label>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <label>
+                            <input type="checkbox" name="privacy" required>
+                            I agree to the privacy policy
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Complete Registration</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Elite Sports Academy</h4>
+                    <p>Developing champions through professional training and mentorship.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📞 08123729316</p>
+                    <p>📧 omocovenant01@gmail.com</p>
+                    <p>📍 LAUTECH, OYO STATE</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href=" https://www.instagram.com/iamhardhey?igsh=Z2JxN3FiOGpkYzJh&utm_source=qr" class="social-link">Instagram</a>
+                        <a href="https://www.facebook.com/share/1GJSSBB4qZ/?mibextid=wwXIfr" class="social-link">Facebook</a>
+                        <a href=" https://x.com/olaoyesulaimon?s=21" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Elite Sports Academy. All rights reserved.<br> Developed By iamhardhey.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
